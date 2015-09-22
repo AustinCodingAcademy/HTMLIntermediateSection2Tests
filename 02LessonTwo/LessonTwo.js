@@ -15,7 +15,6 @@ module.exports = function() {
 	  };
 
   this.isEven = function (number) {
-    // should return true is number is even (divisible by 2)
 	  if (number % 2 == 0) {
 		  return true;
 	  }
