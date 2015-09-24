@@ -12,23 +12,18 @@ module.exports = function() {
 
   this.setFirstItem = function (arr, newFirstItem) {
     // should set the first item in the array with newFirstItem
-    arr[0]= newFirstItem
+    arr[0]= newFirstItem;
     return arr;
   }
 
   this.returnCenterItem = function(fiveByFiveArray) {
     // returns the "center" item in a 5 x 5 array
     // ex. 3 x 3 array [[1, 2, 3], [4, 5, 6], [7, 8, 9]] the center item is 5
-    // var arrLength = fiveByFiveArray.length;
-    // var lastIndex = arrLength - 1;
-    // var midIndex = lastIndex / 2;
-    // var middle = fiveByFiveArray[Math.floor((fiveByFiveArray.length - 1) / 2)];
-    // fiveByFiveArray = [Math.floor((fiveByFiveArray.length - 1) / 2)];
-    fiveByFiveArray = Math.ceil(fiveByFiveArray.length/2)
-    return fiveByFiveArray;
-    console.log(fiveByFiveArray);
+    
+    // fiveByFiveArray = Math.ceil(fiveByFiveArray.length/2)
+    // return fiveByFiveArray;
+    return fiveByFiveArray[2][2];
   }
-
 
   this.arrayJoin = function(arr) {
     // should return a string of the joined array items, separated by a space
