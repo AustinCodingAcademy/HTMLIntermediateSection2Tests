@@ -15,6 +15,7 @@ module.exports = function() {
 
   this.setFirstItem = function (arr, newFirstItem) {
     // should set the first item in the array with newFirstItem
+    
     arr[0] = newFirstItem;
     return arr;
   }
