@@ -2,9 +2,7 @@ module.exports = function() {
 
   this.buildArray = function (first, second, third) {
     // return array with the items first, second, and third in an array.
-    var array = [];
-    array.push(first, second, third);
-    return array;
+    return [first, second, third];
   }
 
   this.returnThirdItem = function (arr) {
