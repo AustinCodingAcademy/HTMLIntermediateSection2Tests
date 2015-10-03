@@ -6,11 +6,11 @@ this.whichSpecies = function (character) {
     	return "dog";
     }
     // should return "cat" when character is 'garfield'
-    else if (character === 'garfield') {
+    if (character === 'garfield') {
     	return "cat";
     }
     // should return "fish" when character is 'nemo'
-    else if (character === 'nemo') {
+    if (character === 'nemo') {
     	return "fish";
     }
     // should return false if character is anything else
