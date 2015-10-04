@@ -27,7 +27,11 @@ module.exports = function() {
   this.createObject = function() {
     // should return an object with keys 'first', 'second', 'third' mapped to
     // values 1, 2, 3
-    return Object.create({ first: 1, second: 2, third: 3 });
+    var object1 = new Object();
+    object1['first'] = 1;
+    object1['second'] = 2;
+    object1['third'] = 3;
+    return object1;
   }
 
   this.returnValueByKey = function(object, key) {
@@ -38,7 +42,7 @@ module.exports = function() {
   this.assignKeyValue = function(object, key, value) {
     // given an object, key, and value, add the key/value pair
     // to the object. return the object
-    object.push(key, value);
+    object['key'] = 'value';
     return object;
   }
 }
