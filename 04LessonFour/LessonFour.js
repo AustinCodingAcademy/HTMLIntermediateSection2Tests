@@ -32,9 +32,9 @@ module.exports = function() {
     // should return an object with keys 'first', 'second', 'third' mapped to
     // values 1, 2, 3
       var Keys = {
-        'a': 1,
-        'b': 2,
-        'c': 3
+        'first': 1,
+        'second': 2,
+        'third': 3
       };
       return Keys;
 
@@ -48,7 +48,7 @@ module.exports = function() {
   this.assignKeyValue = function(object, key, value) {
     // given an object, key, and value, add the key/value pair
     // to the object. return the object
-    object.key = value;
+    object[key] = value;
     return object;
 
   }
