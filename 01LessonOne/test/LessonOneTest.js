@@ -3,7 +3,7 @@ var LessonOne = require('../LessonOne');
 
 describe('LessonOne', function() {
   var lessonOne = new LessonOne();
-
+console.log(lessonOne);
   describe('#returnTrue()', function () {
     it('should return true', function () {
       assert.equal(lessonOne.returnTrue(), true);
