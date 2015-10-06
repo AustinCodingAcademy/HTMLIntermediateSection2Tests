@@ -12,10 +12,10 @@ module.exports = function() {
   this.onlyEvens = function () {
     // should return an array with all even numbers between 1 - 99
     var even = [];
-    for (var i = 0; i < 100; i++) {
-      if ((even[i] % 2) != 1 ) {
+    for (var i = 1; i < 100; i++) {
+      if (i % 2 === 0 ) {
         even.push(i);
-      }
+      } 
     }
     return even;
   }
@@ -27,18 +27,21 @@ module.exports = function() {
     // 5 are replaced by fizzbuzz
     var nums = [];
     for (var i = 0; i < 100; i++) {
-        if ((nums[i] % 3) != 1 && (nums[i] % 5) != 1) {
+        if (i % 3 === 0 && i % 5 === 0) {
           // replace with fizbuzz;
-          nums.push(i)= 'fizzbuzz';
+          nums.push('fizzbuzz');
         }
-        if ((nums[i] % 3) != 1) {
+        else if (i % 3 === 0) {
           // replace with fizz;
-          nums.push(i)= 'fizz';
+          nums.push('fizz');
         }
-        if ((nums[i] % 5) != 1) {
+        else if (i % 5 === 0) {
           // replace with buzz;
-          nums.push(i)= 'buzz';
+          nums.push('buzz');
         } 
+        else {
+          nums.push(i);
+        }
     }
       return nums;   
   }
