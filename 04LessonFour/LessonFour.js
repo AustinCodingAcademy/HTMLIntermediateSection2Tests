@@ -43,7 +43,7 @@ module.exports = function() {
   this.assignKeyValue = function(object, key, value) {
     // given an object, key, and value, add the key/value pair
     // to the object. return the object
-    object['key']= 'value';
+    object[key] = value;
     return object;
   }
 }
