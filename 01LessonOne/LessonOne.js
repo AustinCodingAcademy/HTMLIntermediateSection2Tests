@@ -18,9 +18,9 @@ module.exports = function() {
 
   this.lessThan = function (small, big) {
     // should return true if the first argument is less than the second argument
-    if (small<big) {return true;}
     // and return false if the first argument is greater than the second argument
-    else {return false;}
+    return (small<big);
+
 
   }
 
