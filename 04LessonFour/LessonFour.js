@@ -2,17 +2,23 @@ module.exports = function() {
 
   this.arrayPop = function (arr) {
     // should remove the last item in the array, then return the arr
-
+    var item = arr.pop()
+    return arr;
   }
 
   this.arrayPush = function (arr, item1, item2, item3) {
     // should add these items onto the end of the array, then return the array
-
+  arr.push(item4);
+  return arr;
   }
 
   this.arrayShift = function (arr) {
     // should remove the first item in the array, then return the array
+var arr = [ 1, 2, 3, 4 ];
 
+var shiftedItem = arr.shift();
+
+console.log(arr);
   }
 
   this.arrayUnshift = function (arr, item1, item2, item3) {
